@@ -1,0 +1,116 @@
+<style>
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: green;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: lightgreen}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: lightgreen;
+}
+.lout {
+  background-color: white;
+  border: none;
+  color: green;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+</style>
+<body background="190220.jpg">
+<br><br>
+<div class="dropdown">
+  <button class="dropbtn">FURNITURE TABLE</button>
+  <div class="dropdown-content">
+    <a href="11a.html">ADD A NEW FURNITURE</a>
+    <a href="11b.html">REMOVE A FURNITURE</a>
+    <a href="11c.html">SEARCH FURNITURE DETAILS</a>
+    <a href="fdisp.php">DISPLAY FURNITURE DETAILS</a>
+    <a href="fup.html">UPDATE FURNITURE DETAILS</a>
+  </div>
+</div>
+<div class="dropdown">
+<button class="dropbtn">CUSTOMER TABLE</button>
+  <div class="dropdown-content">
+    <a href="cadd.html">ADD A NEW CUSTOMER</a>
+    <a href="cdel.html">REMOVE A CUSTOMER</a>
+    <a href="cser.html">SEARCH CUSTOMER DETAILS</a>    
+    <a href="cdisp.php">DISPLAY CUSTOMER DETAILS</a>
+    <a href="work.html">UPDATE CUSTOMER DETAILS</a>
+  </div>
+</div>
+<div class="dropdown">
+<button class="dropbtn">EMPLOYEE TABLE</button>
+  <div class="dropdown-content">
+    <a href="eins.html">ADD AN EMPLOYEE</a>
+    <a href="edel.html">REMOVE AN EMPLOYEE</a>
+    <a href="eser.html">SEARCH EMPLOYEE DETAILS</a>    
+    <a href="display.php">DISPLAY EMPLOYEE DETAILS</a>
+    <a href="eup.html">UPDATE EMPLOYEE DETAILS</a>
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn">RENTS TABLE</button>
+  <div class="dropdown-content">
+    <a href="rins.html">ADD A RENT DETAIL</a>
+    <a href="rdis.php">DISPLAY RENT DETAILS</a>
+  </div>
+</div>
+<h2 style="text-align:right;">
+<form action="welcome.html" method="POST"> 
+<input type="submit" class="lout" style="position: absolute;left: 10px;bottom: 20px;" class="button" value="LOGOUT">
+</h2>
+
+
+
+
+
+
+
+
+
+INSERT INTO `showroom` (`Showroom_ID`, `Showroom_Address`, `Showrroom_number`) VALUES ('S001', 'Jayanagar', '1800676343');
+
+INSERT INTO `furniture` (`Furniture_ID`, `Furniture`, `Showroom_ID`, `No_of_pieces`, `price_per_term`) VALUES ('F001', 'Chair', 'S001', '25', '1500');
